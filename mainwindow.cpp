@@ -50,7 +50,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     setDataPtr(wf.PhaseDisplay.data(), _width, _height);
     updatePixmap(wf.PhaseDisplay.data());
-    QPoint position(-_width,0);
+    QPoint position(_width,0);
     if(numScreens > 1)
     {
         slmView.makeFullScreen(true);
